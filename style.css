@@ -16022,6 +16022,11 @@ h3 {
 
 .header {
   background-color: #f0f1f5;
+  padding: 20px 60px 80px;
+}
+
+.logo__img {
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
