@@ -1,9 +1,73 @@
 .header {
   background-color: $whitesmoke;
-  padding: 20px 60px 80px;
-}
+  &__wrapper {
+    padding: 20px 64px 80px;
+    @include media-breakpoint-down(xs){
+      padding:20px 40px 60px;
+    }
+  }
+  .navbar {
+    &__button {
+      border:0;
+      outline: none;
+    }
+    &__content {
+      @include media-breakpoint-down(md){
+        background-color:$darkgray;
+      }
+    }
+  }
+  &__title {
+    text-align: center;
+  }
+  &__inner {
+    &--full-height {
+      height: 100%;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top:20px;
+    }
+  }
+  &__item {
+    flex: 50%;
+  }
+  &__button {
+    margin: 30px 0;
+  }
+  &__video {
+    height:100%;
+    @include media-breakpoint-down(md){
+      height:250px;
+      margin-top:40px;
+    }
+  }
+
 .logo {
   &__img {
-    width:100px;
+    width: 100px;
   }
+}
+.content {
+  padding: 10px;
+  &__title {
+    text-align: center;
+    font-size: 18px;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+.video {
+  background-color: $darkgray;
+  position: relative;
+  &__play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font-size: 60px;
+  }
+}
 }

@@ -10,18 +10,18 @@
 </head>
 
 <body>
-  <header class="header border">
-    <div class="wrapper wrapper-header">
+  <header class="header">
+    <div class="wrapper header__wrapper">
       <div class="nav-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="logo">
             <img class="logo__img" src="assets/images/logo.png" alt="logo" />
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          <button class="navbar-toggler navbar__button" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="collapse navbar-collapse navbar__content justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
@@ -39,17 +39,33 @@
           </div>
         </nav>
       </div>
-      <div class="header-row">
-        <div class="header__item">
+      <div class="d-flex justify-content-between flex-lg-row flex-column">
+        <div class="header__item mr-lg-5">
           <div class="header__inner">
-            <div class="header__title"></div>
-            <div class="button"></div>
-            <div class="header__text"></div>
+            <h1 class="header__title">One Page</h1>
+            <h1 class="header__title">Lorem Ipsum</h1>
+            <div class="button button--centered header__button">
+              <a href="#" type="button" class="button__link btn-info">Button text</a>
+            </div>
+            <div class="d-flex justify-content-between flex-sm-row flex-column header__text">
+              <div class="content">
+                <h3 class="content__title">Title</h3>
+                <p class="content__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nobis
+                  assumenda eligendi sapiente voluptas eveniet!</p>
+              </div>
+              <div class="content">
+                <h3 class="content__title">Title</h3>
+                <p class="content__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nobis
+                  assumenda eligendi sapiente voluptas eveniet!</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="header__item">
-          <div class="header__inner">
-            <div class="header__video"></div>
+          <div class="header__inner header__inner--full-height">
+            <div class="video header__video">
+              <i class="fas fa-play-circle video__play-icon"></i>
+            </div>
           </div>
         </div>
       </div>
