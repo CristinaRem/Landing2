@@ -16289,4 +16289,25 @@ h3 {
   margin-bottom: 10px;
 }
 
+.special-offer {
+  background: #424650;
+  color: #ffffff;
+}
+.special-offer__wrapper {
+  padding-bottom: 50px;
+}
+.special-offer__title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.special-offer__subtitle {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 991.98px) {
+  .special-offer__subtitle {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
