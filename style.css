@@ -16061,11 +16061,11 @@ h3 {
   background-color: #f0f1f5;
 }
 .header__wrapper {
-  padding: 20px 64px 80px;
+  padding: 0 64px 80px;
 }
 @media (max-width: 575.98px) {
   .header__wrapper {
-    padding: 20px 40px 60px;
+    padding: 20px 20px 60px;
   }
 }
 .header .navbar__button {
@@ -16074,7 +16074,12 @@ h3 {
 }
 @media (max-width: 991.98px) {
   .header .navbar__content {
-    background-color: #98a3b5;
+    text-align: right;
+  }
+}
+@media (max-width: 991.98px) {
+  .header .navbar__link {
+    padding-right: 10px;
   }
 }
 .header__title {
@@ -16128,6 +16133,20 @@ h3 {
   transform: translate(-50%, -50%);
   color: #ffffff;
   font-size: 60px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay--gray {
+  background-color: #424650;
+  opacity: 0.3;
+}
+
+.nav-link--white {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
