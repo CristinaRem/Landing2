@@ -16310,4 +16310,70 @@ h3 {
   }
 }
 
+.about {
+  background-color: #f0f1f5;
+}
+.about__item {
+  display: flex;
+}
+@media (max-width: 991.98px) {
+  .about__item {
+    flex-wrap: wrap;
+  }
+}
+.about__image-wrapper {
+  width: 50%;
+  background-color: #98a3b5;
+  position: relative;
+  margin: 20px;
+}
+@media (max-width: 991.98px) {
+  .about__image-wrapper {
+    width: 100%;
+    padding-bottom: 25%;
+  }
+}
+.about__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #ffffff;
+}
+.about__description {
+  width: 50%;
+  margin: 20px;
+}
+@media (max-width: 991.98px) {
+  .about__description {
+    width: 100%;
+  }
+}
+
+.footer {
+  text-align: center;
+  background: #424650;
+}
+.footer__wrapper {
+  padding-bottom: 30px;
+}
+.footer__copyright {
+  color: #f0f1f5;
+  font-size: 10px;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+.social-icons__icon {
+  font-size: 18px;
+  color: #f0f1f5;
+  padding: 0 8px;
+  text-decoration: none;
+}
+.social-icons__icon:hover {
+  color: #98a3b5;
+}
+
 /*# sourceMappingURL=style.css.map */

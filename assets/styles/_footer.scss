@@ -1,0 +1,23 @@
+.footer {
+  text-align: center;
+  background: $darkslategray;
+  &__wrapper {
+    padding-bottom: 30px;
+  }
+  &__copyright {
+    color: $whitesmoke;
+    font-size: 10px;
+  }
+}
+.social-icons {
+  margin-bottom: 10px;
+  &__icon {
+    font-size: 18px;
+    color: $whitesmoke;
+    padding: 0 8px;
+    text-decoration: none;
+    &:hover {
+      color: $darkgray;
+    }
+  }
+}
