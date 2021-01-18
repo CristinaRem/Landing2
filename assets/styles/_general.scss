@@ -1,0 +1,38 @@
+.wrapper {
+  width: 1440px;
+  max-width:100%;
+  margin:0 auto;
+  padding:60px 64px 100px;
+  @include media-breakpoint-down(xs) {
+    padding:40px 20px 60px;
+  }
+}
+.button {
+  &__link {
+    @extend .btn;
+    padding: 0.5em 1.7em;
+  }
+  &--centered{
+    display:flex;
+    justify-content: center;
+  }
+}
+
+.w-40 {
+  width:40%;
+}
+.w-60 {
+  width:60%;
+}
+.border-line {
+  border:1px solid $whitesmoke;
+  &--vertical {
+    width:1px;
+    margin: 0 40px;
+  }
+  &--horizontal {
+    margin:40px 0;
+    height:1px;
+    width:100%;
+  }
+}
